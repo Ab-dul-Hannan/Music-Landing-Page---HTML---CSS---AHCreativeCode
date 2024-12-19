@@ -344,109 +344,118 @@ footer .social-links a:hover {
 
 
 
-/* Responsive Code Here */
+/* Responsive Code */
 @media (max-width: 964px) {
     header {
+        height: auto;
         background-image: none;
+        padding: 20px;
     }
 
     header .info {
-        justify-content: center;
-        padding: 20px;
-        padding-top: 30px;
-    }
-
-    header .info .content p {
+        flex-direction: column;
+        align-items: center;
         text-align: center;
-        width: 100%;
-        padding: 0px 20px;
     }
 
     header .info .content h1 {
-        text-align: center;
+        font-size: 36px;
+    }
+
+    header .info .content p {
+        font-size: 14px;
+        max-width: 100%;
     }
 
     header .info .content .form {
-        width: auto;
-        margin-left: 50px;
-        margin-right: 50px;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 }
 
 @media (max-width: 762px) {
-    main .music {
-        width: 90%;
-        justify-content: center;
+    main {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
     }
 
+    main .music,
     main .popular {
-        width: 90%;
+        width: 100%;
+    }
+
+    main .music .cards {
+        flex-direction: column;
+        gap: 20px;
     }
 
     main .popular .pops {
         flex-direction: column;
+        align-items: center;
         text-align: center;
-    }
-
-    main {
-        flex-direction: column;
-        height: max-content;
-        padding: 30px;
-    }
-
-    .featured {
-        text-align: center;
-    }
-
-    main .music .cards {
-        justify-content: center;
     }
 }
 
 @media (max-width: 590px) {
-    header {
-        height: 500px;
-    }
-
-    header .info .content .form .in input {
-        width: max-content;
-        font-size: 12px;
-    }
-
-    header .info .content .form {
-        width: auto;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    header .info .content p {
-        font-size: 12px;
-    }
-
     header .info .content h1 {
-        font-size: 46px;
+        font-size: 28px;
     }
 
     header .info .content .form {
-        height: 60px;
+        gap: 5px;
     }
 
-    header nav .btn button {
-        font-size: 12px;
-    }
-
-    header nav .logo .txt {
-        font-size: 16px;
+    main .music .cards .card {
+        width: 100%;
     }
 
     footer {
-        flex-direction: column-reverse;
+        flex-direction: column;
+        align-items: center;
         gap: 10px;
     }
 }
 
 @media (max-width: 420px) {
-    main {
-        padding: 30px 20px;
+    body {
+        padding: 10px;
+    }
+
+    header nav .logo .txt {
+        font-size: 14px;
+    }
+
+    header .info .content h1 {
+        font-size: 24px;
+    }
+
+    header .info .content p {
+        font-size: 12px;
+    }
+
+    main .music .cards .card .img {
+        height: 100px;
+    }
+
+    main .popular .pops .num {
+        height: 30px;
+        width: 30px;
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    footer .social-links a {
+        font-size: 10px;
     }
 }
