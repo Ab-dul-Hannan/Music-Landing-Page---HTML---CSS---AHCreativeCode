@@ -40,6 +40,9 @@ header {
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header nav {
