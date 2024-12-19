@@ -446,8 +446,12 @@ footer .social-links a:hover {
 }
 
 @media (max-width: 420px) {
+    body {
+        padding: 0px;
+    }
     header {
         height: 450px;
+        border-radius: 0px;
     }
     main {
         padding: 30px 20px;
@@ -467,5 +471,8 @@ footer .social-links a:hover {
     }
     header .info .content .form .in input {
         font-size: 10px;
+    }
+    footer{
+        border-radius: 0px;
     }
 }
